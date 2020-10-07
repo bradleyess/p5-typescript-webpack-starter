@@ -1,9 +1,10 @@
-import * as p5 from "p5"
+import * as P5 from "p5"
 
-new p5((sketch: p5) => {
-  sketch.setup = () => sketch.createCanvas(800, 800)
-
-  sketch.draw = () => {
-    sketch.background(0, 0, 0)
+new P5((p5: P5) => {
+  p5.setup = () => {
+    p5.createCanvas(window.innerWidth, window.innerHeight)
+    p5.background(0)
   }
+
+  p5.draw = () => {}
 })
